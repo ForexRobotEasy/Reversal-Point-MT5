@@ -1,0 +1,59 @@
+
+// Reversal Point MT5 by Forex Robot Easy Team
+// Developer's site: forexroboteasy.com
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+
+// Define input parameters
+input int Period = 14; // Period for analyzing market data
+input ENUM_APPLIED_PRICE PriceType = PRICE_CLOSE; // Price type to use for analysis
+input int Shift = 0; // Shift in bars for analysis
+
+// Define global variables
+CTrade trade; // Trade object for generating alerts
+
+// Custom indicator for reversal point detection
+int ReversalPointIndicator()
+{
+   // Add code for detecting reversal points based on the specified parameters
+   // Return 1 if a reversal point is detected, 0 otherwise
+}
+
+// Function to generate alerts for potential reversal points
+void GenerateAlert()
+{
+   // Add code for generating visual and/or audible alerts
+   // Notify traders when potential reversal points are detected
+}
+
+// Initialization function
+int OnInit()
+{
+   // Add code for initializing the trade object and setting up the chart
+   // Return INIT_SUCCEEDED if initialization is successful, INIT_FAILED otherwise
+}
+
+// Deinitialization function
+void OnDeinit(const int reason)
+{
+   // Add code for cleaning up any resources used by the program
+}
+
+// Execution function
+void OnTick()
+{
+   // Add code for executing the reversal point detection and alert generation functions
+   if(ReversalPointIndicator() == 1)
+   {
+      GenerateAlert();
+   }
+}
+
+// Program entry point
+void OnStart()
+{
+   // Add code for starting the program execution
+   OnTick();
+}
+
